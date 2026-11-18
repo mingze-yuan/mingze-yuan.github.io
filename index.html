@@ -68,9 +68,20 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                <!-- My research interests include deep learning, medical image analysis, and computer vision. -->
-                My research spans <strong>generative modeling</strong> and <strong>large language models (LLMs)</strong>. I currently focus on (1) <strong>self-improving agents for scientific discovery</strong>, particularly molecular discovery and spatial biology, and (2) <strong>LLM reasoning</strong>. My earlier work includes diffusion models and their applications to medical imaging.
+                My research spans <strong>generative modeling</strong> and <strong>large language models (LLMs)</strong>, with two current directions.
               </p>
+              <p>
+                <strong>Self-improving agents for scientific discovery.</strong> I study how AI agents can learn from earlier tasks
+                to choose and refine workflows for new scientific problems. In <a href="#zhang2026molrsi">MoLRSI</a>, we use feedback
+                from earlier searches to guide molecular discovery. In <a href="#he2026fusemap">FuseMap</a>, we use a shared molecular
+                atlas to help agents analyze spatial gene expression across brain datasets.
+              </p>
+              <p>
+                <strong>LLM reasoning.</strong> I study how language models refine their internal representations through repeated computation.
+                My work on <a href="#yuan2026looped">looped language models</a> asks when intermediate states support accurate predictions,
+                when later computation can reuse states from different depths, and how training can make that reuse more reliable.
+              </p>
+              <p>My earlier work includes diffusion models and their applications to medical imaging.</p>
             </td>
           </tr>
         </tbody></table>
@@ -88,7 +99,7 @@
               </a>
             </td>
             <td class="tdcontent">
-              <p>
+              <p id="zhang2026molrsi">
                 <a href="https://arxiv.org/abs/2610.39714"><papertitle>MoLRSI: A Recursive Self-Improving AI Agent for Molecular Discovery</papertitle></a>
                 <br>
                 Yikun Zhang<sup>*</sup>, Xiwei Cheng<sup>*</sup>, <strong>Mingze Yuan</strong><sup>*</sup>, et al.
@@ -96,7 +107,7 @@
                 <em>arXiv preprint, 2026</em>
                 <br><small>Co-first authorship to be reflected in a forthcoming revision.</small>
               </p>
-              <div class="paper" id="zhang2026molrsi"><a href="https://arxiv.org/abs/2610.39714">arXiv</a> &nbsp|&nbsp <a href="https://github.com/yikunpku/MolRSI">project</a></div>
+              <div class="paper"><a href="https://arxiv.org/abs/2610.39714">arXiv</a> &nbsp|&nbsp <a href="https://github.com/yikunpku/MolRSI">project</a></div>
             </td>
           </tr>
 
@@ -107,7 +118,7 @@
               </a>
             </td>
             <td class="tdcontent">
-              <p>
+              <p id="he2026fusemap">
                 <a href="https://yichun-he-lab.github.io/publications.html"><papertitle>An agentic AI spatial molecular foundation model of the brain</papertitle></a>
                 <br>
                 Yichun He, Hao Sheng, <strong>Mingze Yuan</strong>, et al.
@@ -115,7 +126,7 @@
                 <em>Nature Methods, accepted in principle, 2026</em>
                 
               </p>
-              <div class="paper" id="he2026fusemap"><a href="https://github.com/wanglab-broad/FuseMap">project</a> &nbsp|&nbsp <a href="https://yichun-he-lab.github.io/publications.html">lab publication list</a></div>
+              <div class="paper"><a href="https://github.com/wanglab-broad/FuseMap">project</a> &nbsp|&nbsp <a href="https://yichun-he-lab.github.io/publications.html">lab publication list</a></div>
             </td>
           </tr>
 
@@ -126,7 +137,7 @@
               </a>
             </td>
             <td class="tdcontent">
-              <p>
+              <p id="yuan2026looped">
                 <papertitle>Ready to Read, Not Ready to Reuse: Mixed-Depth Interfaces in Looped Language Models</papertitle>
                 <br>
                 <strong>Mingze Yuan</strong>, Na Li, Quanzheng Li, Huangjie Zheng
