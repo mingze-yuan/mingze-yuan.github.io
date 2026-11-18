@@ -21,10 +21,27 @@
     width: 65%;
 }
 
-.tdimg > img {
+.publication-figure-hint {
+    margin: 4px 0 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.publication-figure {
+    display: block;
+    max-width: 250px;
+    cursor: zoom-in;
+}
+
+.publication-figure:hover,
+.publication-figure:focus-visible {
+    outline: 2px solid #1772d0;
+    outline-offset: 3px;
+}
+
+.publication-figure img {
     display: block;
     width: 100%;
-    max-width: 250px;
     height: auto;
 }
 
@@ -45,7 +62,7 @@
         padding: 16px 20px 4px;
     }
 
-    .tdimg > img {
+    .publication-figure {
         max-width: 360px;
     }
 
