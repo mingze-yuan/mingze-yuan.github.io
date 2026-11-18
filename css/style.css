@@ -7,20 +7,49 @@
     width: 250px;
 }
 
-td > img {
-    width: 250px;
+.tdimg,
+.tdcontent {
+    padding: 20px;
+    vertical-align: middle;
 }
 
-@media (max-width:760px) {
-    td > img {
-        display: none;
+.tdimg {
+    width: 35%;
+}
+
+.tdcontent {
+    width: 65%;
+}
+
+.tdimg > img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width: 760px) {
+    .publication-list,
+    .publication-list > tbody,
+    .publication-list > tbody > tr,
+    .publication-list > tbody > tr > td {
+        display: block;
     }
-    .tdimg {
-        display: none;
-        width: 0%;
-        padding: 0;
-    }
+
+    .tdimg,
     .tdcontent {
-        width: 100%;
+        width: auto;
+    }
+
+    .tdimg {
+        padding: 16px 20px 4px;
+    }
+
+    .tdimg > img {
+        max-width: 360px;
+    }
+
+    .tdcontent {
+        padding: 8px 20px 16px;
     }
 }
